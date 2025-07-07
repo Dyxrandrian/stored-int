@@ -1,0 +1,10 @@
+config:
+  target: 'https://5k2nxq2xwokckqt5lte6sdbkqa0riwmu.lambda-url.eu-west-3.on.aws'
+  phases:
+    - duration: 60     # durée du test en secondes
+      arrivalRate: 50  # nombre de requêtes par seconde
+
+scenarios:
+  - flow:
+      - get:
+          url: "/stored-int"
